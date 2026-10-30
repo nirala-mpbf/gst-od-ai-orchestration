@@ -1,0 +1,2 @@
+{"type":"message","id":"8a3515ec-83fb-4f1e-812a-ae9368a15fa0","timestamp":1793093389.134374100,"role":"USER","content":"I want to submit my profile details"}
+{"type":"message","id":"chatcmpl-98","parentId":"8a3515ec-83fb-4f1e-812a-ae9368a15fa0","timestamp":1793093389.134921600,"role":"ASSISTANT","content":"[tool_call: processWorkflowCommand({\"payload\":{},\"metadata\":{\"event\":\"PROFILE_SUBMITTED\",\"operation\":\"SUBMIT_EVENT\",\"referenceId\":\"existing-application-reference\",\"requestId\":\"unique-identifier\"}})]","toolCallId":"call_cr9zj496"}

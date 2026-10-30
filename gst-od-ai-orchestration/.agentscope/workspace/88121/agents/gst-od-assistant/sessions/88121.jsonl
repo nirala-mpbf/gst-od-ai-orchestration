@@ -1,0 +1,2 @@
+{"type":"message","id":"5ca525fb-e554-4432-bfb0-8c385642a5f0","timestamp":1793276564.718666000,"role":"USER","content":"I want to submit my profile details"}
+{"type":"message","id":"chatcmpl-481","parentId":"5ca525fb-e554-4432-bfb0-8c385642a5f0","timestamp":1793276564.718666000,"role":"ASSISTANT","content":"{\"name\": \"processWorkflowCommand\", \"parameters\": {\"body\": {\"metadata\": {\"operation\": \"SUBMIT_EVENT\", \"requestId\": \"12345678\", \"referenceId\": \"abc123\", \"event\": \"PROFILE_SUBMITTED\"}, \"payload\": {}}}"}

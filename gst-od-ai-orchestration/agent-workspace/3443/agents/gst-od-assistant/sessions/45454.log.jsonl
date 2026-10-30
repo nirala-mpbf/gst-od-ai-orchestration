@@ -1,0 +1,2 @@
+{"type":"message","id":"3e6bb21f-656b-4f3b-98b3-aa29d389579b","timestamp":1792673525.719729500,"role":"USER","content":"Please submit the Udyam document for referenceId R2."}
+{"type":"message","id":"chatcmpl-542","parentId":"3e6bb21f-656b-4f3b-98b3-aa29d389579b","timestamp":1792673525.719729500,"role":"ASSISTANT","content":"[tool_call: submit_udyam_document({\"referenceId\":\"R2\"})]","toolCallId":"call_hfotq4bg"}

@@ -1,0 +1,2 @@
+{"type":"message","id":"9eaef9cb-999a-4c4f-9e57-face0f3a424b","timestamp":1792762229.253011900,"role":"USER","content":"Hi how are you"}
+{"type":"message","id":"chatcmpl-215","parentId":"9eaef9cb-999a-4c4f-9e57-face0f3a424b","timestamp":1792762229.256804000,"role":"ASSISTANT","content":"I'm doing well, thank you for asking. I'm an AI assistant here to help with any questions or tasks you have. What brings you here today?"}

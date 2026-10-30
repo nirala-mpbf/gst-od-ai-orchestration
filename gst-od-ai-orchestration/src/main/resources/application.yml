@@ -1,0 +1,67 @@
+server:
+  port: ${SERVER_PORT:8080}
+spring:
+  mvc:
+    async:
+      request-timeout: 3000s
+  datasource:
+    url: ${APP_DB_URL:jdbc:postgresql://localhost:5433/prompt_metadata}
+    username: ${DB_USERNAME:prompt_app}
+    password: ${DB_PASSWORD:prompt_app_password}
+
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+      password: ${REDIS_PASSWORD:}
+      connect-timeout: 2s
+      timeout: 2s
+
+  sql:
+    init:
+      mode: never
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    # Existing pre-Flyway database: enable only for its first migration run.
+    baseline-on-migrate: ${FLYWAY_BASELINE_ON_MIGRATE:true}
+    baseline-version: 0
+
+  application:
+    name: gst-od-ai-orchestration
+app:
+  agent:
+    workspace: ${AGENTSCOPE_WORKSPACE:./agent-workspace}
+#    model: ${AGENTSCOPE_MODEL:openai:gpt-4o-mini}
+
+agent:
+  gateway:
+    base-url: ${AGENT_GATEWAY_BASE_URL:http://localhost:4000}
+    api-key: ${AGENT_GATEWAY_API_KEY:local-gateway}
+    mcp-url: ${AGENT_GATEWAY_MCP_URL:http://localhost:4000/mcp}
+  model: ${AGENT_MODEL:llama3.1:8b}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+logging:
+  level:
+    io.agentscope: DEBUG
+    io.modelcontextprotocol: DEBUG
+
+lakefs:
+  endpoint: ${LAKEFS_ENDPOINT:http://localhost:8001}
+  access-key: ${LAKEFS_ACCESS_KEY:}
+  secret-key: ${LAKEFS_SECRET_KEY:}
+  repository: ${LAKEFS_REPOSITORY:brain-config}
+  branch: ${LAKEFS_BRANCH:main}
+  # lakeFS SDK connection pool
+  http:
+    max-idle-connections: 1
+    keep-alive-minutes: 5
+
+prompt:
+  cache:
+    ttl: ${PROMPT_CACHE_TTL:7d}

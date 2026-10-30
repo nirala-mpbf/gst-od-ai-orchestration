@@ -1,0 +1,2 @@
+{"type":"message","id":"44ae169c-3415-4570-9e4e-89ea20baa67c","timestamp":1793094467.723945200,"role":"USER","content":"What is my current onboarding status?"}
+{"type":"message","id":"chatcmpl-370","parentId":"44ae169c-3415-4570-9e4e-89ea20baa67c","timestamp":1793094467.724944500,"role":"ASSISTANT","content":"[tool_call: processWorkflowCommand({\"body\":{\"metadata\":{\"operation\":\"GET_STATE\",\"referenceId\":\"onboarding_instance\",\"requestId\":\"1234567890\"},\"payload\":{}}})]","toolCallId":"call_h26xr3gy"}

@@ -1,0 +1,2 @@
+{"type":"message","id":"1df2fc5f-1ee5-460d-8a81-85d2a3abaadb","timestamp":1793095701.890862600,"role":"USER","content":"What is my current onboarding status?"}
+{"type":"message","id":"chatcmpl-155","parentId":"1df2fc5f-1ee5-460d-8a81-85d2a3abaadb","timestamp":1793095701.891861500,"role":"ASSISTANT","content":"{\"name\": \"processWorkflowCommand\", \"parameters\": {\"body\": {\"metadata\": {\"operation\": \"GET_STATE\", \"requestId\": \"unique-correlation-id\", \"referenceId\": \"existing-application-reference\"}, \"payload\": \"{}\"}}"}

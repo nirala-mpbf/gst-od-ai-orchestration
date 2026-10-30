@@ -1,0 +1,2 @@
+{"type":"message","id":"efc71a27-8035-4ad2-8f85-10ebd4e7f93b","timestamp":1793092965.617457800,"role":"USER","content":"I want to submit my otp verification"}
+{"type":"message","id":"chatcmpl-331","parentId":"efc71a27-8035-4ad2-8f85-10ebd4e7f93b","timestamp":1793092965.619456700,"role":"ASSISTANT","content":"[tool_call: processWorkflowCommand({\"body\":{\"metadata\":{\"event\":\"OTP_VERIFIED\",\"operation\":\"SUBMIT_EVENT\",\"referenceId\":\"example-reference\",\"requestId\":\"1234567890\"},\"payload\":{}}})]","toolCallId":"call_xp59a1kd"}
